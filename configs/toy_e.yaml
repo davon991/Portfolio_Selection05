@@ -1,0 +1,31 @@
+run:
+  run_id: toy__solver__toyE__20260419__01
+  run_type: toy
+  scope: solver
+  objective_role: development
+  run_date: '2026-04-19'
+  data_window: toyE
+  solver_profile: default_pg_newton
+  eligible_for_main_text: false
+  notes: 'Toy-E near collinear stress.'
+model:
+  delta: 0.020
+  eta: 0.000
+  gamma: 0.001
+  rho: 200.0
+solver:
+  pg_max_iter: 400
+  pg_step: 0.06
+  pg_tol: 1.0e-7
+  newton_max_iter: 25
+toy:
+  scenario_name: Toy-E
+  assets: [A1, A2, A3, A4, A5]
+  budget: [0.2, 0.2, 0.2, 0.2, 0.2]
+  x_prev: null
+  covariance:
+    - [0.0400, 0.0392, 0.0120, 0.0100, 0.0080]
+    - [0.0392, 0.0400, 0.0118, 0.0098, 0.0078]
+    - [0.0120, 0.0118, 0.0300, 0.0120, 0.0100]
+    - [0.0100, 0.0098, 0.0120, 0.0250, 0.0110]
+    - [0.0080, 0.0078, 0.0100, 0.0110, 0.0200]

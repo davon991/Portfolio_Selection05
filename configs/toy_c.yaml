@@ -1,0 +1,31 @@
+run:
+  run_id: toy__drdb__toyC__20260419__01
+  run_type: toy
+  scope: drdb
+  objective_role: development
+  run_date: '2026-04-19'
+  data_window: toyC
+  solver_profile: default_pg_newton
+  eligible_for_main_text: false
+  notes: 'Toy-C equicorrelation.'
+model:
+  delta: 0.025
+  eta: 0.000
+  gamma: 0.001
+  rho: 120.0
+solver:
+  pg_max_iter: 350
+  pg_step: 0.08
+  pg_tol: 1.0e-7
+  newton_max_iter: 20
+toy:
+  scenario_name: Toy-C
+  assets: [A1, A2, A3, A4, A5]
+  budget: [0.2, 0.2, 0.2, 0.2, 0.2]
+  x_prev: null
+  covariance:
+    - [0.0100, 0.0048, 0.0056, 0.0064, 0.0072]
+    - [0.0048, 0.0144, 0.00672, 0.00768, 0.00864]
+    - [0.0056, 0.00672, 0.0196, 0.00896, 0.01008]
+    - [0.0064, 0.00768, 0.00896, 0.0256, 0.01152]
+    - [0.0072, 0.00864, 0.01008, 0.01152, 0.0324]
